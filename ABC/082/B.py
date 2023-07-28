@@ -9,3 +9,5 @@ if S < T:
     print('Yes')
 else:
     print('No')
+    
+#join関数は書かなくてもいい
