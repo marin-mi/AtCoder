@@ -7,8 +7,7 @@ for _ in range(Q):
     L.append(Li)
     R.append(Ri)
 
-S = [None] * (N + 1)
-S[0] = 0
+S = [0] * (N + 1)
 for i in range(N):
     S[i + 1] = S[i] + A[i]
 for j in range(Q):
