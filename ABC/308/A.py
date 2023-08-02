@@ -1,3 +1,5 @@
+#len(S) - 1が大事
+
 S = list(map(int, input().split()))
 
 flag = True
