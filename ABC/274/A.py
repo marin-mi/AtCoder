@@ -1,9 +1,9 @@
 A, B = map(int, input().split())
 
-cal = str(B / A)
+S = B / A
 
-if int(cal[6]) < 5:
-    print(cal[:5])
-else:
-    cal[5] + 1
-    print(cal[:5])
+print(f'{S:.3f}')
+
+# fstringによって出力する桁数指定ができる
+# 小数点以下3桁にできる
+# 四捨五入する問題が出ない理由
