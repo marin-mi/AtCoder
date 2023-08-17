@@ -23,5 +23,3 @@ for i in range(N - 8):
         
         if flag:
             print(i + 1, j + 1)
-            
-                    
