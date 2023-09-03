@@ -6,11 +6,11 @@ cnt = 0
 over = 0
 for i in range(N):
     if F[i] >= base:
-        cnt += 1 
+        cnt += 1
         over += F[i]
 if cnt > 0:
     hiku = over // P
-    F.sort(reverse = True)
+    F.sort(reverse=True)
     S = F[D * hiku:]
     ans = sum(S) + hiku * P
 else:
@@ -23,5 +23,5 @@ if cnt > 0:
 
     if kake * P < ans:
         ans = kake * P
-    
+
 print(ans)

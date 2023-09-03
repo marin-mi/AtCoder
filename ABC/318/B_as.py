@@ -6,7 +6,7 @@ for _ in range(N):
     for x in range(a, b):
         for y in range(c, d):
             G[x][y] = 1
-            
+
 ans = 0
 for i in range(100):
     ans += sum(G[i])

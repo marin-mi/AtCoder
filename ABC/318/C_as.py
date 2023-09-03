@@ -1,6 +1,6 @@
 N, D, P = map(int, input().split())
 F = list(map(int, input().split()))
-F.sort(reverse = True)
+F.sort(reverse=True)
 
 for left in range(0, N, D):
     right = min(left + D, N)
