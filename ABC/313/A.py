@@ -1,10 +1,10 @@
 N = int(input())
 P = list(map(int, input().split()))
- 
+
 max_ = P[0]
 eqcnt = 0
-cnt = 0    
-   
+cnt = 0
+
 for i in range(1, N - 1):
     if max_ < P[i]:
         max_ = P[i]
@@ -18,3 +18,6 @@ else:
         print(0)
     else:
         print(max_ + 1 - P[0])
+
+# 自己流、chatgptに力借りた
+# ACされてる
