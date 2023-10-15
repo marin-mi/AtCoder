@@ -1,3 +1,5 @@
 S = input()
-N = len(S) // 2
-print(S[N])
+
+ans = len(S) // 2
+
+print(S[ans])
