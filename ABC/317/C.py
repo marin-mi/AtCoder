@@ -12,8 +12,8 @@ for i in range(N):
         node, length, visited = stack.pop()
         visited[node] = True
         ans = max(ans, length)
-        for next_node, edge_length in graph[node]:
-            if not visited[next_node]:
-                stack.append((next_node, length + edge_length, visited.copy()))
+        for new_node, edge_length in graph[node]:
+            if not visited[new_node]:
+                stack.append((new_node, length + edge_length, visited.copy()))
 
 print(ans)

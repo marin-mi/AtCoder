@@ -1,13 +1,20 @@
 N = int(input())
 S = [input() for _ in range(N)]
 
-win_cnt = [0] * N
+win = []
 for i in range(N):
-    for j in range(N):
-        if S[i][j] == 'o':
-            win_cnt[i] += 1
+    cnt = S[i].count('o')
+    win.append((cnt, -i))
 
-ranking = sorted([(count, i) for i, count in enumerate(win_cnt)], key=lambda x: (-x[0], x[1]))
+win.sort(reverse=True)
 
-for _, player_num in ranking:
-    print(player_num + 1, end=" ")
+ans = []
+for pair in win:
+    ans.append(-pair[1] + 1)
+
+print(*ans)
+
+# hyouriと公式解説2番目の方針を参考
+# タプルにしてリストに追加していく
+# 7行目の2つ目の要素がマイナスな理由は、買った試合数が同じ時プレイヤーの番号が小さい方が順位が上とするため
+# 0indexなので13行目で+1する

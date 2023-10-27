@@ -1,4 +1,5 @@
 N = int(input())
-P = list(map(int, input().split()))
+P = [0] + [0] + list(map(int, input().split()))
 
-print(N - 1)
+T = [0] * N
+T[0], T[1] = 
