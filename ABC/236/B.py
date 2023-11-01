@@ -9,3 +9,5 @@ for i in range(N):
     if cnt[i] == 3:
         print(i + 1)
         exit()
+
+# 自力で解いた
